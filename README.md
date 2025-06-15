@@ -1,6 +1,6 @@
 # mijn-bedrijf
 
-In deze repository werk ik aan een website voor mijn eigen bedrijf.
+In deze repository werk ik aan een website voor mijn eigen bedrijf (https://julianpetersiscoding.github.io/mijn-bedrijf/)
 
 ## Licentie
 
