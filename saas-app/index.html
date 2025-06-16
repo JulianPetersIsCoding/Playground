@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mijn SaaS App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+    #dashboard {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="login">
+    <h1>Login bij Mijn SaaS</h1>
+    <input type="text" id="username" placeholder="Gebruikersnaam" /><br />
+    <input type="password" id="password" placeholder="Wachtwoord" /><br />
+    <button onclick="login()">Login</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <div id="dashboard">
+    <h1>Dashboard</h1>
+    <p>Welkom bij je SaaS-app!</p>
+    <button onclick="logout()">Uitloggen</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === 'admin' && pass === 'test123') {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('dashboard').style.display = 'block';
+      } else {
+        document.getElementById('error').innerText = 'Ongeldige login';
+      }
+    }
+
+    function logout() {
+      document.getElementById('dashboard').style.display = 'none';
+      document.getElementById('login').style.display = 'block';
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+      document.getElementById('error').innerText = '';
+    }
+  </script>
+</body>
+</html>
