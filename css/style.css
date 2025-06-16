@@ -1,0 +1,68 @@
+/* Reset en basis */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: #ff7f50;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ff6333;
+}
+
+main {
+  flex: 1;
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
