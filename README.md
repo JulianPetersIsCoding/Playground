@@ -1,6 +1,6 @@
-# mijn-bedrijf
+# Playground
 
-In deze repository werk ik aan een website voor mijn eigen bedrijf (https://julianpetersiscoding.github.io/mijn-bedrijf/)
+In deze repository werk ik aan een website voor mijn persoonlijke ontwikkeling (https://julianpetersiscoding.github.io/playground/)
 
 ## Licentie
 
